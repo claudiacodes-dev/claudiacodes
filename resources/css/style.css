@@ -357,14 +357,22 @@ h2.typewriter {
     /* ANCHOR MEDIA QUERIES max 400 ========================================= */
 
     @media screen and (max-width: 400px) {
+        
+        .main {
+          padding-top: 2rem;
+      
+            justify-content: start;
+            height: 100vh;
+        }
 
         .content-card {
             padding: 1rem;
         }
 
         .portfolio {
-            height: 90vh;
+            height: 80vh;
             width: 90vw;
+
         }
 
         .about-item img {
@@ -374,7 +382,7 @@ h2.typewriter {
 
         .contact {
             margin-top: 1rem;
-            margin-bottom: 8rem;
+            /* padding-bottom: 8rem; */
         }
 
     }
