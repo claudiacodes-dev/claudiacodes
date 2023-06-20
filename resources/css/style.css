@@ -1,3 +1,5 @@
+/* TODO - MOBILE FIRST!!! ==========================*/
+
 /* ANCHOR Google Fonts ---------------------------------*/
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -326,6 +328,10 @@ h2.typewriter {
 
 @media screen and (max-width: 750px) {
 
+    p {
+        text-align: left;
+    }
+    
     .content-card {
         padding: 2rem;
     }
@@ -354,14 +360,9 @@ h2.typewriter {
     @media screen and (max-width: 400px) {
         
         .main {
-          padding-top: 2rem;
-      
+            padding-top: 2rem;
             justify-content: start;
             height: 100vh;
-        }
-
-        p {
-            text-align: left;
         }
 
         .content-card {
@@ -371,7 +372,6 @@ h2.typewriter {
         .portfolio {
             height: 80vh;
             width: 90vw;
-
         }
 
         .about-item img {
