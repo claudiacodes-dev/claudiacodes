@@ -54,14 +54,12 @@ html {
     background-color: var(--background-color);
     color: var(--main-color);
     font-family: var(--second-font);
-
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 a {
@@ -72,7 +70,6 @@ a {
 p {
     line-height: 1.4rem;
     text-align: justify;
-
 }
 
 p:not(:last-child) {
@@ -176,7 +173,6 @@ h4 {
 /* ANCHOR typewriter-Effekt -----------------------------*/
 
 h2.typewriter {
-
     overflow: hidden;
     border-right: .15em solid var(--accent-color);
     white-space: nowrap;
@@ -185,7 +181,6 @@ h2.typewriter {
     animation:
         typing 3.5s steps(22, end),
         blink-caret .5s step-end infinite;
-
 }
 
 /* The typing effect */
@@ -320,7 +315,7 @@ h2.typewriter {
 /* ANCHOR MEDIA QUERIES max 1200 ========================================= */
 
 @media screen and (max-width: 1200px) {
-
+    
     .content-card {
         padding: 2.8rem;
     }
@@ -363,6 +358,10 @@ h2.typewriter {
       
             justify-content: start;
             height: 100vh;
+        }
+
+        p {
+            text-align: left;
         }
 
         .content-card {
