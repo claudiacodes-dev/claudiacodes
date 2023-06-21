@@ -1,4 +1,10 @@
+
+
+/* TODO =============================== */
 /* TODO - MOBILE FIRST!!! ==========================*/
+/* TODO - Google Fonts laden und direkt hosten!!! ==========================*/
+/* =============================== */
+
 
 /* ANCHOR Google Fonts ---------------------------------*/
 
@@ -13,7 +19,7 @@ font-family: 'League Spartan', sans-serif; */
 /* ANCHOR root ---------------------------*/
 
 :root {
-    --accent-color: #ff7300ef;
+    --accent-color: #ff0800a8;
     --main-color: #193362;
     --second-color: #808080;
     --background-color: #ECECEC;
@@ -41,7 +47,6 @@ font-family: 'League Spartan', sans-serif; */
 
 *::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
-    /* border-radius: 14px; */
     border: 3px solid var(--main-color);
 }
 
@@ -103,9 +108,13 @@ h4 {
     padding: 0.4rem 0;
 }
 
-/* em {
-    color: var(--second-color);
-} */
+h5 {
+    font-family: var(--second-font);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+}
+
 
 /* ANCHOR Layout --------------------------------*/
 
@@ -119,7 +128,6 @@ h4 {
 
 .col-1-2 {
     grid-template-columns: 1fr 2fr;
-    /* align-items: end; */
 }
 
 .col-2-1 {
@@ -128,7 +136,7 @@ h4 {
 
 /* ANCHOR main -----------------------------*/
 
-.main {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,17 +186,15 @@ h2.typewriter {
     overflow: hidden;
     border-right: .15em solid var(--accent-color);
     white-space: nowrap;
-    /*  letter-spacing: .15em; */
     width: 19rem;
     animation:
         typing 3.5s steps(22, end),
         blink-caret .5s step-end infinite;
 }
 
-/* The typing effect */
 @keyframes typing {
     from {
-        width: 0
+        width: 0;
     }
 
     to {
@@ -196,12 +202,11 @@ h2.typewriter {
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
     from,
     to {
-        border-color: transparent
+        border-color: transparent;
     }
 
     50% {
@@ -215,7 +220,6 @@ h2.typewriter {
     display: flex;
     flex-direction: column;
     padding-top: 12rem;
-    /* height: 100%; */
 }
 
 .about-item {
@@ -227,15 +231,14 @@ h2.typewriter {
     hyphens: manual;
 }
 
-.image img {
+.about-item img {
     width: 100%;
     height: auto;
-    /* border: 2px solid var(--main-color); */
 }
 
 /* ANCHOR skills -----------------------------*/
 
-.skill {
+ul.skill li {
     background-color: var(--main-color);
     color: #fff;
     line-height: 3rem;
@@ -244,6 +247,8 @@ h2.typewriter {
     list-style-type: none;
     display: inline;
 }
+
+/* ANCHOR progress -----------------------------*/
 
 .progress {
     background: var(--background-color);
@@ -306,10 +311,8 @@ h2.typewriter {
 }
 
 .icon:hover {
-    /* transform: scale(1.5); */
     color: var(--accent-color)
 }
-
 
 
 /* ANCHOR MEDIA QUERIES ========================================= */
@@ -317,7 +320,7 @@ h2.typewriter {
 /* ANCHOR MEDIA QUERIES max 1200 ========================================= */
 
 @media screen and (max-width: 1200px) {
-    
+
     .content-card {
         padding: 2.8rem;
     }
@@ -331,7 +334,7 @@ h2.typewriter {
     p {
         text-align: left;
     }
-    
+
     .content-card {
         padding: 2rem;
     }
@@ -358,12 +361,39 @@ h2.typewriter {
     /* ANCHOR MEDIA QUERIES max 400 ========================================= */
 
     @media screen and (max-width: 400px) {
-        
-        .main {
-            padding-top: 2rem;
-            justify-content: start;
-            height: 100vh;
+
+    main {
+        justify-content: start;
+        height: 100vh;
+    }
+       
+    h2.typewriter {
+        width: 100%;
+        white-space: normal;
+        word-break: normal;
+    }
+
+    @keyframes typing {
+        from {
+            width: 15rem;
         }
+
+        to {
+            width: 15rem;
+        }
+    }
+
+    @keyframes blink-caret {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: transparent;
+        }
+    }
 
         .content-card {
             padding: 1rem;
@@ -371,7 +401,8 @@ h2.typewriter {
 
         .portfolio {
             height: 80vh;
-            width: 90vw;
+            width: 100vw;
+            border: none;
         }
 
         .about-item img {
@@ -381,7 +412,6 @@ h2.typewriter {
 
         .contact {
             margin-top: 1rem;
-            /* padding-bottom: 8rem; */
         }
 
     }
