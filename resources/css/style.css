@@ -315,9 +315,9 @@ ul.skill li {
 
 /* ANCHOR MEDIA QUERIES ========================================= */
 
-/* ANCHOR MEDIA QUERIES max 1200 ========================================= */
+/* ANCHOR MEDIA QUERIES max 1280 ========================================= */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
 
     .content-card {
         padding: 2.8rem;
@@ -325,9 +325,9 @@ ul.skill li {
 
 }
 
-/* ANCHOR MEDIA QUERIES max 750 ========================================= */
+/* ANCHOR MEDIA QUERIES max 700 ========================================= */
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 700px) and (orientation: portrait) {
 
     p {
         text-align: left;
@@ -337,7 +337,6 @@ ul.skill li {
         padding: 2rem;
     }
 
-    .col-1-2,
     .col-2-1 {
         grid-template-columns: 1fr;
     }
@@ -356,40 +355,30 @@ ul.skill li {
         margin-top: 1.6rem;
     }
 
-    /* ANCHOR MEDIA QUERIES max 400 ========================================= */
+    /* ANCHOR MEDIA QUERIES max 480 ========================================= */
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 480px) and (orientation: portrait) {
 
         main {
             justify-content: start;
             height: 100vh;
         }
 
+        h2 {
+            font-size: 1.1rem;
+        }
+
         h2.typewriter {
-            width: 100%;
-            white-space: normal;
-            word-break: normal;
+            width: 17.6rem;
         }
 
         @keyframes typing {
             from {
-                width: 15rem;
+                width: 0;
             }
 
             to {
-                width: 15rem;
-            }
-        }
-
-        @keyframes blink-caret {
-
-            from,
-            to {
-                border-color: transparent;
-            }
-
-            50% {
-                border-color: transparent;
+                width: 17.6rem;
             }
         }
 
