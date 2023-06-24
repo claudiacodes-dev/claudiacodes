@@ -1,6 +1,4 @@
-
-
-/* TODO =============================== */
+/* TODO ========= */
 /* TODO - MOBILE FIRST!!! ==========================*/
 /* TODO - Google Fonts laden und direkt hosten!!! ==========================*/
 /* =============================== */
@@ -362,38 +360,38 @@ ul.skill li {
 
     @media screen and (max-width: 400px) {
 
-    main {
-        justify-content: start;
-        height: 100vh;
-    }
-       
-    h2.typewriter {
-        width: 100%;
-        white-space: normal;
-        word-break: normal;
-    }
-
-    @keyframes typing {
-        from {
-            width: 15rem;
+        main {
+            justify-content: start;
+            height: 100vh;
         }
 
-        to {
-            width: 15rem;
-        }
-    }
-
-    @keyframes blink-caret {
-
-        from,
-        to {
-            border-color: transparent;
+        h2.typewriter {
+            width: 100%;
+            white-space: normal;
+            word-break: normal;
         }
 
-        50% {
-            border-color: transparent;
+        @keyframes typing {
+            from {
+                width: 15rem;
+            }
+
+            to {
+                width: 15rem;
+            }
         }
-    }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent;
+            }
+
+            50% {
+                border-color: transparent;
+            }
+        }
 
         .content-card {
             padding: 1rem;
