@@ -386,6 +386,10 @@ ul.skill li {
             padding: 1rem;
         }
 
+        .col-1-2 {
+            grid-template-columns: 1fr;
+        }
+
         .portfolio {
             height: 80vh;
             width: 100vw;
