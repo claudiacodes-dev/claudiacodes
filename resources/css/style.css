@@ -266,6 +266,7 @@ ul.skill li {
 
 .frontend,
 .website,
+.bootstrap,
 .fcc {
     display: flex;
     justify-content: end;
@@ -276,11 +277,15 @@ ul.skill li {
 }
 
 .frontend {
-    width: 31%;
+    width: 37%;
 }
 
 .website {
-    width: 87%;
+    width: 98%;
+}
+
+.bootstrap {
+    width: 10%;
 }
 
 .fcc {
