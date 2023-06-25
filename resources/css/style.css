@@ -265,6 +265,7 @@ ul.skill li {
 
 .frontend,
 .website,
+.git,
 .bootstrap,
 .fcc {
     display: flex;
@@ -281,6 +282,10 @@ ul.skill li {
 
 .website {
     width: 98%;
+}
+
+.git {
+    width: 54%;
 }
 
 .bootstrap {
