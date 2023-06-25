@@ -74,7 +74,6 @@ a {
 
 p {
     line-height: 1.4rem;
-    text-align: justify;
 }
 
 p:not(:last-child) {
@@ -322,17 +321,20 @@ ul.skill li {
 
 /* ANCHOR MEDIA QUERIES max 1280 ========================================= */
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1280px) {
 
-    .content-card {
+    /* .content-card {
         padding: 2.8rem;
-    }
+    } */
 
+    p {
+        text-align: justify;
+    }
 }
 
 /* ANCHOR MEDIA QUERIES max 700 ========================================= */
 
-@media screen and (max-width: 700px) and (orientation: portrait) {
+@media screen and (max-width: 700px) {
 
     p {
         text-align: left;
@@ -342,6 +344,7 @@ ul.skill li {
         padding: 2rem;
     }
 
+    .col-1-2,
     .col-2-1 {
         grid-template-columns: 1fr;
     }
@@ -352,8 +355,9 @@ ul.skill li {
     }
 
     .about-item img {
-        width: 100%;
+        width: 40%;
         height: auto;
+
     }
 
     .contact {
@@ -362,7 +366,7 @@ ul.skill li {
 
     /* ANCHOR MEDIA QUERIES max 480 ========================================= */
 
-    @media screen and (max-width: 480px) and (orientation: portrait) {
+    @media screen and (max-width: 480px) {
 
         main {
             justify-content: start;
@@ -407,7 +411,7 @@ ul.skill li {
         }
 
         .contact {
-            margin-top: 1rem;
+            margin-top: 2rem;
         }
 
     }
