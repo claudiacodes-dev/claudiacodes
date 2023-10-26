@@ -102,7 +102,7 @@ h3 {
 h4 {
     font-family: var(--second-font);
     font-size: 1rem;
-    padding: 0.4rem 0;
+    padding-bottom: 0.4rem;
 }
 
 h5 {
@@ -116,19 +116,30 @@ h5 {
 /* ANCHOR Layout --------------------------------*/
 
 .col-1-2,
-.col-2-1 {
+.col-2-2 {
     display: grid;
-    gap: 2.6rem;
+    column-gap: 2.6rem;
     width: 100%;
     padding-top: 6rem;
+}
+
+.col-1 {
+    display: grid;
+    /* gap: 2.6rem; */
+    width: 100%;
+    /* padding-top: 6rem; */
 }
 
 .col-1-2 {
     grid-template-columns: 1fr 2fr;
 }
 
-.col-2-1 {
-    grid-template-columns: 2fr 1fr;
+.col-2-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-1 {
+    grid-column: 1 / span 2;
 }
 
 /* ANCHOR main -----------------------------*/
@@ -263,7 +274,12 @@ ul.skill li {
     background: var(--main-color);
 }
 
+.uiux,
+.visualDesign,
+.ideation,
 .frontend,
+.javaScript,
+.react,
 .website,
 .git,
 .bootstrap,
@@ -276,8 +292,28 @@ ul.skill li {
     color: var(--background-color);
 }
 
+.uiux {
+    width: 100%;
+}
+
+.visualDesign {
+    width: 28%;
+}
+
+.ideation {
+    width: 14%;
+}
+
 .frontend {
-    width: 37%;
+    width: 41%;
+}
+
+.javaScript {
+    width: 100%;
+}
+
+.react {
+    width: 41%;
 }
 
 .website {
@@ -285,11 +321,11 @@ ul.skill li {
 }
 
 .git {
-    width: 54%;
+    width: 62%;
 }
 
 .bootstrap {
-    width: 33%;
+    width: 100%;
 }
 
 .fcc {
